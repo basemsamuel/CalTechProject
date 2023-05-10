@@ -1,0 +1,17 @@
+.center {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.right {
+    text-align: right;
+    padding-right: 10px;
+    padding-left: 10 px;
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 16px;
+    box-shadow: 0 0 0 2px rgb(0, 140, 255);
+}

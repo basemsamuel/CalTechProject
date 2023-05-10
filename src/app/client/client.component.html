@@ -1,0 +1,64 @@
+<div  class='center'>
+    <table style="margin-top: 50px; width: 300px">
+        <tr>
+            <td>
+                <div class='center'>
+                    <form [formGroup]="clientForm" (ngSubmit)='onSubmit()'>
+                        <h2>Client Creation Form</h2>
+                        <img src="./assets/profile.png" alt="Profile Image" style="height: 100px;">
+                        <br>
+                        <div class='right'>
+                            <p>
+                                <label for="name">Full Name: </label>
+                                <input type="text" id="name" placeholder="eg: John Doe" formControlName="name">
+                            </p>
+                        </div>
+    
+                        <div class='right'>
+                            <p>
+                                <label for="address">Street Address: </label>
+                                <input type="text" id="address" placeholder="eg: 101 MyStreet" formControlName="address">
+                            </p>
+                        </div>
+                        <div class='right'>
+                            <p>
+                                <label for="city">City: </label>
+                                <input type="text" id="city" placeholder="eg: Los Angeles" formControlName="city">
+                            </p>
+                        </div>
+                        <div class='right'>
+                            <p>
+                                <label for="zipcode">Zip Code: </label>
+                                <input type="text" id="zipcode" placeholder="eg: 90210" formControlName="zipcode">
+                            </p>
+                        </div>
+                        <div class='right'>
+                            <p>
+                                <label for="phone">Phone: </label>
+                                <input type="text" id="phone" placeholder="eg: 310-921-3625" formControlName="phone">
+                            </p>
+                        </div>
+                        <div class='right'>
+                            <p>
+                                <label for="email">Email: </label>
+                                <input type="text" id="email" placeholder="eg: jd@mydomain.com" formControlName="email">
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                <input type="reset" class="contactform-buttons" id="" value="Clear" />
+                                <button type="submit">ADD CLIENT</button>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+<!-- <div  class='center'> -->
+    <h5 class='center'>FORM DATA</h5>
+    <p class='center'>
+        {{this.clientForm.value | json}}
+    </p>
+<!-- </div> -->

@@ -1,0 +1,63 @@
+<div  class='center'>
+    <table style="margin-top: 50px; width: 300px">
+        <tr>
+            <td>
+                <div class='center'>
+                    <form [formGroup]="clientForm" (ngSubmit)='onSubmit()'>
+                        <h2>Client Meeting Scheduling</h2>
+                        <img src="./assets/profile.png" alt="Profile Image" style="height: 100px;">
+                        <br>
+                            <div class='right'>
+                            <p>
+                                <label for="name">First Name: </label>
+                                <input type="text" id="name" formControlName="fnanameme" required>
+                            </p>
+                        </div>
+                            <div class='right'>
+                            <p>
+                                <label for="lname">Last Name: </label>
+                                <input type="text" id="lname" formControlName="lname" required>
+                            </p>
+                        </div>
+                            <div class='right'>
+                            <p>
+                                <label for="description">Description: </label>
+                                <textarea id="description" formControlName="meeting_desc" required style="width: 170px;"></textarea>
+                            </p>
+                        </div>
+                        <div class='right'>
+                            <p>
+                                <label for="clientdate">Date: </label>
+                                <input type="date" id="apptdate" formControlName="apptdate" value="2022-10-26" style="width: 170px;">
+                            </p>
+                        </div>
+                        <div class='right'>
+                            <p>
+                                <label for="apptime">Start Time: </label>
+                                <input type="time" id="apptime" formControlName="apptime" style="width: 170px;">
+                            </p>
+                        </div>
+                            <div class='right'>
+                            <p>
+                                <label for="appendtime">End Time: </label>
+                                <input type="time" id="appendtime" formControlName="appendtime" style="width: 170px;">
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                <input type="reset" class="contactform-buttons" id="" value="Clear" />
+                                <button type="submit">Add Appointments</button>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+<!-- <div  class='center'> -->
+    <h5 class='center'>FORM DATA</h5>
+    <p class='center'>
+        {{this.clientForm.value | json}}
+    </p>
+<!-- </div> -->
