@@ -10,6 +10,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ProductsComponent } from './products/products.component';
 import { ClientComponent } from './client/client.component';
 import { ClientschedulingComponent } from './clientscheduling/clientscheduling.component';
+import { NewsComponent } from './news/news.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -18,13 +21,16 @@ import { ClientschedulingComponent } from './clientscheduling/clientscheduling.c
     HomeComponent,
     ProductsComponent,
     ClientComponent,
-    ClientschedulingComponent
+    ClientschedulingComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

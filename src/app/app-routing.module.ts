@@ -6,13 +6,15 @@ import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
 import { ClientComponent } from './client/client.component';
 import { ClientschedulingComponent } from './clientscheduling/clientscheduling.component';
+import { NewsComponent } from './news/news.component';
 
 const routes: Routes = [
   {path:'home', component: HomeComponent},
   {path:'client', component: ClientComponent},
   {path:'clientscheduling', component: ClientschedulingComponent},
   {path:'products', component: ProductsComponent},
-  {path:'profile', component: ProfileComponent}
+  {path:'profile', component: ProfileComponent},
+  {path:'news', component: NewsComponent}
 ];
 
 @NgModule({
