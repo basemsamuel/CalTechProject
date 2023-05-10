@@ -9,7 +9,8 @@ import { Product } from 'src/model/client';
   styleUrls: ['./client.component.css']
 })
 export class ClientComponent {
-
+  showFormData = false;
+  
   clientForm = new FormGroup(
     {
       name: new FormControl(''),

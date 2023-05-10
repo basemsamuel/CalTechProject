@@ -8,6 +8,8 @@ import { Product } from 'src/model/client';
   styleUrls: ['./clientscheduling.component.css']
 })
 export class ClientschedulingComponent {
+  showFormData = false;
+
   clientForm = new FormGroup(
     {
       fnanameme: new FormControl(''),

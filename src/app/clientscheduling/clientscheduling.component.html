@@ -10,19 +10,19 @@
                             <div class='right'>
                             <p>
                                 <label for="name">First Name: </label>
-                                <input type="text" id="name" formControlName="fnanameme" required>
+                                <input type="text" id="name" placeholder="eg: John" formControlName="fnanameme" required style="width: 170px;">
                             </p>
                         </div>
                             <div class='right'>
                             <p>
                                 <label for="lname">Last Name: </label>
-                                <input type="text" id="lname" formControlName="lname" required>
+                                <input type="text" id="lname" placeholder="eg: Doe" formControlName="lname" required style="width: 170px;">
                             </p>
                         </div>
                             <div class='right'>
                             <p>
                                 <label for="description">Description: </label>
-                                <textarea id="description" formControlName="meeting_desc" required style="width: 170px;"></textarea>
+                                <textarea id="description" placeholder="eg: Some Description" formControlName="meeting_desc" required style="width: 170px;"></textarea>
                             </p>
                         </div>
                         <div class='right'>
@@ -55,9 +55,9 @@
         </tr>
     </table>
 </div>
-<!-- <div  class='center'> -->
+<div *ngIf="showFormData">
     <h5 class='center'>FORM DATA</h5>
     <p class='center'>
         {{this.clientForm.value | json}}
     </p>
-<!-- </div> -->
+</div>
